@@ -1,0 +1,53 @@
+{
+  "name": "nodejs-typescript-boilerplate",
+  "version": "1.0.0",
+  "description": "boilerplate for nodejs and typescript project",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "$(npm bin)/tsc",
+    "static-analysis": "$(npm bin)/eslint .",
+    "lint-fix": "$(npm bin)/eslint --fix .",
+    "prettier": "$(npm bin)/prettier --write .",
+    "check-updates": "$(npm bin)/ncu",
+    "make-updates": "$(npm bin)/ncu -u",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/satvik-s/nodejs-typescript-boilerplate.git"
+  },
+  "keywords": [
+    "typescript",
+    "nodejs",
+    "eslint",
+    "prettier"
+  ],
+  "author": "Satvik Shukla",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/satvik-s/nodejs-typescript-boilerplate/issues"
+  },
+  "homepage": "https://github.com/satvik-s/nodejs-typescript-boilerplate#readme",
+  "devDependencies": {
+    "@types/node": "18.11.9",
+    "@typescript-eslint/eslint-plugin": "5.43.0",
+    "@typescript-eslint/parser": "5.43.0",
+    "eslint": "8.27.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-eslint-comments": "3.2.0",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-prettier": "4.2.1",
+    "eslint-plugin-simple-import-sort": "8.0.0",
+    "eslint-plugin-unused-imports": "2.0.0",
+    "husky": "8.0.2",
+    "lint-staged": "13.0.3",
+    "npm-check-updates": "16.4.1",
+    "prettier": "2.7.1",
+    "typescript": "4.9.3"
+  },
+  "lint-staged": {
+    "*": "npm run prettier"
+  }
+}

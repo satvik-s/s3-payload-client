@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - main
-  pull_request:
-    paths:
-      - '*'
 
 jobs:
   build:
@@ -56,6 +53,6 @@ jobs:
       - run: rm -rf node_modules
       - run: npm ci --production
       - run: cp -r node_modules/ dist/
-      - run: npm publish --access public --dry-run
+      - run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}

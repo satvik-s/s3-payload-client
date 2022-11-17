@@ -1,10 +1,6 @@
 name: build package
 
-on:
-  pull_request:
-    paths:
-      - 'src/**'
-      - 'test/**'
+on: pull_request
 
 jobs:
   build:
@@ -15,5 +11,6 @@ jobs:
         with:
           node-version: 16
       - run: npm ci
+      - run: npm run static-analysis
       - run: npm run test
       - run: npm run build

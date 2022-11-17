@@ -50,7 +50,7 @@ jobs:
       - run: npm ci
       - run: npm run build
       - run: rm -rf node_modules
-      - run: npm ci --production
+      - run: npm ci --production --ignore-scripts
       - run: cp -r node_modules/ dist/
       - run: npm publish --access public
         env:

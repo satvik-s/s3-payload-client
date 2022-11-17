@@ -1,8 +1,9 @@
 {
-  "name": "s3-payloads",
+  "name": "@satvik-s/s3-payload-client",
   "version": "0.0.1",
   "description": "Library to allow transferring payloads using AWS S3",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "clean": "rimraf node_modules dist",
     "test": "echo no tests!",
@@ -21,7 +22,10 @@
   ],
   "author": "Satvik Shukla",
   "license": "MIT",
-  "homepage": "https://github.com/satvik-s/s3-payloads",
+  "homepage": "https://github.com/satvik-s/s3-payload-client",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "dependencies": {
     "@aws-sdk/client-s3": "3.212.0"
   },

@@ -47,11 +47,12 @@ jobs:
           node-version: 16
           registry-url: https://npm.pkg.github.com/
           scope: "@satvik-s"
+      - run: npm pkg delete scripts.prepare
       - run: npm ci
       - run: npm run build
       - run: rm -rf node_modules
-      - run: npm ci --production --ignore-scripts
+      - run: npm ci --production
       - run: cp -r node_modules/ dist/
-      - run: npm publish --access public --ignore-scripts
+      - run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}

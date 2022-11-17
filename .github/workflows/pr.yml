@@ -1,9 +1,6 @@
 name: build package
 
-on:
-  pull_request:
-    paths:
-      - '*'
+on: pull_request
 
 jobs:
   build:

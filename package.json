@@ -1,6 +1,6 @@
 {
   "name": "s3-payloads",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Library to allow transferring payloads using AWS S3",
   "main": "dist/index.js",
   "scripts": {

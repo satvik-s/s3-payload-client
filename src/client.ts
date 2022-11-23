@@ -6,9 +6,7 @@ import {
 } from '@aws-sdk/client-s3';
 import { randomUUID } from 'crypto';
 
-import { PayloadClientConfig } from './types/payload-client-config';
-import { S3Pointer } from './types/s3-pointer';
-import { StoreCommandInput } from './types/store-command-input';
+import { PayloadClientConfig, S3Pointer, StoreCommandInput } from './types';
 
 export class PayloadClient {
     private readonly client: S3Client;

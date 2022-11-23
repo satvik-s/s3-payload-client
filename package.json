@@ -1,6 +1,6 @@
 {
   "name": "@satvik-s/s3-payload-client",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Library to allow transferring payloads using AWS S3",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

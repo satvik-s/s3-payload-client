@@ -6,3 +6,4 @@ node_modules/
 .prettierignore
 .tool-versions
 !package.json
+.npmignore
